@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <item
+        android:id="@+id/bottom_search"
+        android:icon="@drawable/bottommenu_ic_recherche"
+        android:title="search"/>
+
+    <item
+        android:id="@+id/bottom_messages"
+        android:icon="@drawable/bottommenu_ic_message"
+        android:title="message" />
+
+    <item
+        android:id="@+id/bottom_horaire"
+        android:icon="@drawable/bottommenu_ic_horraire"
+        android:title="schedule" />
+
+    <item
+        android:id="@+id/bottom_cart"
+        android:icon="@drawable/bottommenu_ic_panier"
+        android:title="shopping_cart" />
+</menu>

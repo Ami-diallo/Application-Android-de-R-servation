@@ -1,0 +1,212 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/location_choice"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1F5FF"
+    tools:context=".RechercheAvancee">
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:onClick="showProfile"
+        android:layout_width="58dp"
+        android:layout_height="59dp"
+        android:background="@color/lightBlue"
+        android:backgroundTint="@color/lightBlue"
+        android:backgroundTintMode="add"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_round_person_24" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="300dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="20dp"
+        android:text="Trouver un cours parfait pour vous!"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/wrjnrj"
+        android:layout_width="238dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="15dp"
+        android:background="#FFFFFF"
+        android:drawableStart="@drawable/ic_location"
+        android:hint=" Ville, adresse .."
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView14"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/wrjnrj2"
+        android:layout_width="64dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="38dp"
+        android:background="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="59dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="22dp"
+        android:checked="true"
+        android:text="En personne"
+        app:layout_constraintBottom_toTopOf="@+id/option"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="98dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="59dp"
+        android:checked="true"
+        android:text="En ligne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search" />
+
+    <RadioButton
+        android:id="@+id/option2"
+        android:layout_width="107dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginBottom="5dp"
+        android:checked="true"
+        android:onClick="BackToResearch"
+        android:text="Plus d'options"
+        app:layout_constraintBottom_toTopOf="@+id/textView13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_menu"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="819dp" />
+
+    <ImageButton
+        android:id="@+id/right_sidebar"
+        android:layout_width="38dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/lightBlue"
+        android:onClick="ShowPopup"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_sidebar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageButton>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="141dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="50dp"
+        android:text="Location"
+        android:textColor="@color/marineBlue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/wrjnrj"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="0dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="50dp"
+        android:text="Langue"
+        android:textColor="@color/marineBlue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/radioButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="74dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="50dp"
+        android:text="Prix"
+        android:textColor="@color/marineBlue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/wrjnrj2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="107dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="15dp"
+        android:checked="true"
+        android:text="Français"
+        android:textColor="@color/marineBlue"
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="107dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginBottom="15dp"
+        android:checked="true"
+        android:text="Anglais"
+        android:textColor="@color/marineBlue"
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="50dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="38dp"
+        android:text="CAD"
+        android:textColor="@color/marineBlue"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomView"
+        app:layout_constraintStart_toEndOf="@+id/wrjnrj2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

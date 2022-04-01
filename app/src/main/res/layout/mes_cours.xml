@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBlue"
+    tools:context=".MesCours">
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:onClick="showProfile"
+        android:layout_width="58dp"
+        android:layout_height="59dp"
+        android:background="@color/lightBlue"
+        android:backgroundTint="@color/lightBlue"
+        android:backgroundTintMode="add"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_round_person_24" />
+
+    <ImageButton
+        android:id="@+id/right_sidebar"
+        android:layout_width="38dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/lightBlue"
+        android:onClick="ShowPopup"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_sidebar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageButton>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="137dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="83dp"
+        android:text="Mes Cours"
+        android:textColor="#0C1753"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/right_sidebar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="819dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_menu"/>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:onClick="to_MonCours"
+        android:layout_width="97dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="26dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/cours_icon" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:onClick="to_MonCours"
+        android:layout_width="97dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="197dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/bottomView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/cours_icon" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:onClick="to_MonCours"
+        android:layout_width="97dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="35dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/cours_icon" />
+
+    <Button
+        android:id="@+id/button2"
+        android:onClick="to_MonCours"
+        android:layout_width="223dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="46dp"
+        android:backgroundTint="@color/black"
+        android:backgroundTintMode="add"
+        android:text="Apprendre à dessiner"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintStart_toEndOf="@+id/imageButton" />
+
+    <Button
+        android:id="@+id/button4"
+        android:onClick="to_MonCours"
+        android:layout_width="223dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="197dp"
+        android:backgroundTint="@color/black"
+        android:backgroundTintMode="add"
+        android:text="Apprendre à apprendre"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/bottomView"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2" />
+
+    <Button
+        android:id="@+id/button5"
+        android:onClick="to_MonCours"
+        android:layout_width="223dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="55dp"
+        android:backgroundTint="@color/black"
+        android:backgroundTintMode="add"
+        android:text="Apprendre à lire"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintStart_toEndOf="@+id/imageButton3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

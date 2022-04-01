@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">tp3Version2</string>
+    <string-array name="Les_elements_de_mon_panier">
+        <item>Apprendre a dessiner</item>
+        <item>Cours d espagnol pour debutant</item>
+    </string-array>
+
+    <string-array name="description_LI">
+        <item>150$</item>
+        <item>300$</item>
+    </string-array>
+
+    <string-array name="Mes_cours_messages">
+        <item>Apprendre a dessiner</item>
+        <item>Apprendre a lire</item>
+        <item>Apprendre l anglais</item>
+    </string-array>
+
+    <string-array name="Mes_messages">
+        <item>Vous: Quel est le mode d eval..</item>
+        <item>Si vous savez lire,cela devrait..</item>
+        <item>Vous:Merci beaucoup!</item>
+    </string-array>
+    <string-array name="cours">
+        <item>Anglais 101</item>
+        <item>Calcul 1</item>
+        <item>Chimie</item>
+        <item>Intro a leconomie</item>
+        <item>Biologie</item>
+        <item>Physique</item>
+        <item>Philosophie</item>
+        <item>Espagnol</item>
+        <item>Programmation</item>
+        <item>Administration</item>
+    </string-array>
+
+    <string-array name="desc">
+        <item>12:00</item>
+        <item>14:45</item>
+        <item>09:30</item>
+        <item>13:45</item>
+        <item>08:00</item>
+        <item>12:30</item>
+        <item>16:00</item>
+        <item>17:00</item>
+        <item>10:00</item>
+        <item>07:45</item>
+
+    </string-array>
+
+
+    <string name="profileButton">Bouton de profile</string>
+    <string name="searchButton">Bouton de recherche</string>
+    <string name="messageButton">Bouton pour les messages</string>
+    <string name="calenderButton">Bouton pour le calendrier</string>
+    <string name="shoppingButton">Bouton du panier</string>
+    <string name="menuButton">Bouton de menu</string>
+    <string name="recyclerTitle">Mes cours</string>
+    <string name="premier"><u>Premier cours</u></string>
+    <string name="deuxieme"><u>Deuxième cours</u></string>
+    <string name="troisieme"><u>Troisième cours</u></string>
+    <string name="titreCours">Apprendre à dessiner</string>
+    <string name="horaire">Lundi de 20h30 à 22h30</string>
+    <string name="infoCours">Avec professeur A, Classe ID:1234</string>
+
+    <string-array name="mesCours">
+        <item>Apprendre à dessiner</item>
+        <item>Apprendre à dessiner</item>
+        <item>Apprendre à dessiner</item>
+        <item>Apprendre à dessiner</item>
+    </string-array>
+
+    <string-array name="description">
+        <item>Avec professeur A, Classe ID:1234</item>
+        <item>Avec professeur B, Classe ID:1234</item>
+        <item>Avec professeur C, Classe ID:1234</item>
+        <item>Avec professeur D, Classe ID:1234</item>
+    </string-array>
+
+
+</resources>
